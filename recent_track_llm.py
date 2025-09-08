@@ -68,7 +68,7 @@ class AIAnalysisService:
                 return None
 
     def call_qwen_single(self, messages: List[Dict[str, Any]], api_key: str, 
-                        model: str = "qwen-turbo", timeout: int = 60) -> str:
+                        model: str = "qwen-flash", timeout: int = 60) -> str:
         """单个API调用，使用指定密钥"""
         try:
             dashscope.api_key = api_key
